@@ -1,7 +1,7 @@
 :root {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;  /*100-900*/
+  font-weight: 400; /*100-900*/
   font-style: normal;
 
   box-sizing: border-box;
@@ -22,6 +22,27 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
+.header-nav,
+.header-second {
+  display: grid;
+}
+
+.header-nav {
+  grid-template-columns: auto 1fr auto;
+}
+
+.header-second {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.header button {
+  background-color: rgb(79, 185, 223);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
 .header-second img {
   width: 3.5rem;
   aspect-ratio: 1;
@@ -38,26 +59,24 @@ body {
 }
 
 .sidebar > div {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .sidebar > div > i {
-    font-size: 2rem;
-    
+  font-size: 2rem;
 }
 
 .sidebar > div > h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-
 
 .main-content {
   grid-column: 2 / 3;
