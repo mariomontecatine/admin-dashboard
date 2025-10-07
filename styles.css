@@ -5,6 +5,7 @@
   font-style: normal;
 
   box-sizing: border-box;
+  --gray-background: rgb(230, 227, 227);
 }
 
 body {
@@ -57,7 +58,6 @@ body {
   color: white;
   display: grid;
 }
-
 .sidebar > div {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -80,12 +80,13 @@ h1 {
 
 .main-content {
   grid-column: 2 / 3;
-  background-color: rgb(230, 227, 227);
+  background-color: var(--gray-background);
+  display: grid;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 300px 300px;
   gap: 1.2rem;
 }
 
@@ -99,4 +100,10 @@ h1 {
 .project-container > h4,
 .project-container > p {
   margin-top: 0;
+}
+
+.announcements {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
 }
