@@ -68,7 +68,7 @@ a {
   margin-right: 1.5rem;
 }
 
-.header-nav img {
+.header-nav img, .trending img{
   width: 2.5rem;
   aspect-ratio: 1;
   object-fit: cover;
@@ -243,5 +243,18 @@ h1 {
 
 .announcement-element h5 {
   margin-bottom: 0;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trending-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
 }
 /* CLOSING MAIN CONTENT ELEMENTS */
