@@ -81,7 +81,22 @@ h1 {
 .main-content {
   grid-column: 2 / 3;
   background-color: rgb(230, 227, 227);
+}
+
+.projects-container {
   display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 3;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.project-container {
+  background-color: white;
+  border-radius: 5px;
+  border-left: 5px solid rgb(255, 196, 0);
+  padding: 1.5rem;
+}
+
+.project-container > h4,
+.project-container > p {
+  margin-top: 0;
 }
