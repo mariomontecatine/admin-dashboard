@@ -19,12 +19,21 @@ body {
   grid-template-rows: 1fr 7fr;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
 /* HEADER ELEMENTS */
 .header {
   grid-column: 2 / 3;
   margin-top: 0;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 .header-nav {
@@ -104,7 +113,7 @@ body {
   border: none;
   border-radius: 25px;
   margin-left: 2rem;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1.6rem;
 }
 
 .header-second img {
@@ -131,6 +140,7 @@ body {
   padding: 0.2rem;
   display: flex;
   gap: 1rem;
+  margin-left: 1rem;
 }
 
 h1 {
@@ -160,19 +170,42 @@ h1 {
   grid-column: 2 / 3;
   background-color: var(--gray-background);
   display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  align-items: start;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: 300px 300px;
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.3rem;
 }
 
 .project-container {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 7px;
   border-left: 7px solid var(--yellow-color);
   padding: 1.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-container i {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: end;
 }
 
 .project-container > h4,
@@ -184,9 +217,31 @@ h1 {
   opacity: 0.8;
 }
 
-.announcements {
+.resto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.announcements,
+.trending {
   background-color: white;
-  border-radius: 10px;
-  display: grid;
+  border-radius: 7px;
+  padding: 1.3rem;
+  box-sizing: border-box;
+}
+
+.announcement-element {
+  margin-bottom: 0.8rem;
+}
+
+.announcement-element p {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-top: 0;
+}
+
+.announcement-element h5 {
+  margin-bottom: 0;
 }
 /* CLOSING MAIN CONTENT ELEMENTS */
